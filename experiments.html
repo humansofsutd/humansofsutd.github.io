@@ -1,0 +1,10 @@
+---
+layout: page
+title: Experiments
+permalink: /experiments/
+order: 2
+---
+{% for post in site.categories.experiments %}
+    <h2 class="postTitle"><a class="postTitle-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+{% endfor %}
